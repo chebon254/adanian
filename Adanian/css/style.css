@@ -375,12 +375,82 @@ section.about {
     justify-content: space-between;
     flex-wrap: wrap;
     position: relative;
+    padding: 60px 0px 0px;
 }
 
 .ellipse {
     position: absolute;
     top: -50%;
     left: -20%;
+}
+
+.about-card {
+    width: 260px;
+    height: 260px;
+    border-radius: 40px;
+    padding: 24px;
+    overflow: hidden;
+    position: relative;
+}
+
+.about-card svg#ellipse {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+.about-card .card-text {
+    position: absolute;
+    bottom: 24px;
+    left: 24px;
+}
+
+.about-card span.icon {
+    width: 42px;
+    height: 42px;
+    border-radius: 12px;
+    background-color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.about-card span.icon svg {
+    width: 30px;
+    height: 30px;
+}
+
+.about-card .card-text h2 {
+    color: var(--light-grey);
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 56px;
+}
+
+.about-card .card-text p {
+    color: var(--light-grey);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.about-card:nth-child(2) {
+    background-color: var(--yellow);
+}
+
+.about-card:nth-child(3) {
+    background-color: #06400B;
+}
+
+.about-card:nth-child(4) {
+    background-color: var(--blue);
+}
+
+.about-card:nth-child(5) {
+    background-color: #90123F;
 }
 
 /* == Contact == */
