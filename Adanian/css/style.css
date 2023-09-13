@@ -39,12 +39,12 @@ html {
 
 /* Track */
 ::-webkit-scrollbar-track {
-    background-color: var(--blue);
+    background-color: var(--black-level-nd);
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: var(--white);
+    background: var(--blue);
 }
 
 /* == || SCROLL BAR == */
@@ -133,7 +133,7 @@ nav {
 
 /* == BANNER == */
 section.banner{
-    padding: 2000px;
+    padding: 100px 0px;
 }
 
 /* == Contact == */
