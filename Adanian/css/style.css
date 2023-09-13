@@ -140,7 +140,7 @@ nav {
 
 /* == BANNER == */
 section.banner {
-    padding: 100px 0px;
+    padding: 100px 0px 40px;
     overflow: hidden;
     position: relative;
     z-index: 0;
@@ -246,7 +246,7 @@ section.banner {
 }
 
 .banner button.btn-register {
-    margin: 30px 0px;
+    margin: 30px 0px 0px;
     padding: 18px 56px;
     justify-content: center;
     align-items: center;
@@ -262,17 +262,125 @@ section.banner {
 .banner-illusion {
     min-width: 280px;
 }
-.banner-img{
+
+.banner-img {
     position: absolute;
     z-index: 1;
     right: 0px;
     top: 0px;
     height: fit-content;
-    width: fit-content;
+    width: 100%;
+    min-width: 280px;
+    max-width: 850px;
 }
-.banner-img svg{
+
+.banner-img svg {
     height: 100%;
     vertical-align: middle;
+}
+
+/* == About == */
+section.about {
+    padding: 40px 0px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.about-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-container .left {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 550px;
+    min-width: 280px;
+}
+
+.ac .l-images {
+    width: 257px;
+    margin: 5px;
+}
+
+.ac .r-images {
+    width: 257px;
+    margin: 5px;
+}
+
+.ac .l-images img {
+    display: block;
+    margin: 0px 0px 10px;
+}
+
+.ac .l-images img.left-img {
+    width: 218px;
+    float: right;
+}
+
+.about-container .right {
+    width: 100%;
+    max-width: 550px;
+    min-width: 280px;
+}
+
+.about-container .right h3 {
+    color: var(--yellow);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px;
+}
+
+.about-container .right h1 {
+    color: var(--light-grey);
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 56px;
+    text-transform: uppercase;
+    margin: 20px 0px;
+}
+
+.about-container .right p {
+    color: var(--light-grey);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+}
+
+.about-container .right button {
+    margin: 30px 0px 0px;
+    padding: 18px 56px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+    background: var(--yellow);
+    color: var(--light-grey);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+}
+
+.about-cards {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.ellipse {
+    position: absolute;
+    top: -50%;
+    left: -20%;
 }
 
 /* == Contact == */
