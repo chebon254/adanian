@@ -13,10 +13,13 @@
     -o-transition: all 400ms ease-in-out;
     transition: all 400ms ease-in-out;
 }
-button, input{
+
+button,
+input {
     outline: none;
     border: 0px;
 }
+
 :root {
     --transparent: #00000000;
     --white: #ffffff;
@@ -24,9 +27,11 @@ button, input{
     --black: #000000;
     --black-level-nd: #0E141C;
     --grey: #BCBCBC;
+    --light-grey: #F9FCFC;
     --yellow: #F39711;
     --shadow: #00000033;
 }
+
 html {
     scroll-behavior: smooth;
 }
@@ -49,9 +54,10 @@ html {
 
 /* == || SCROLL BAR == */
 /* == GENERAL == */
-body{
+body {
     background: linear-gradient(56deg, var(--blue) 0%, var(--black-level-nd) 100%);
 }
+
 .container {
     width: 100%;
     max-width: 1240px !important;
@@ -67,6 +73,7 @@ nav {
     width: 100%;
     background-color: var(--transparent);
 }
+
 .nav-container {
     height: 100%;
     width: 100%;
@@ -113,7 +120,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
-    
+
 }
 
 
@@ -132,13 +139,146 @@ nav {
 
 
 /* == BANNER == */
-section.banner{
+section.banner {
     padding: 100px 0px;
+    overflow: hidden;
+    position: relative;
+    z-index: 0;
+    height: fit-content;
+    width: 100%;
+}
+
+.banner-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 2;
+}
+
+.banner-text {
+    height: fit-content;
+    width: 100%;
+    max-width: 900px;
+    min-width: 280px;
+}
+
+.bt .top {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.left.t {
+    height: fit-content;
+    width: fit-content;
+    padding: 0px 10px 0px 0px;
+}
+
+.left.t h1 {
+    width: 199px;
+    transform: rotate(-90deg);
+    color: var(--yellow);
+    font-family: Urbanist;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 46px;
+    text-transform: uppercase;
+}
+
+.right.t {
+    padding: 0px 0px 0px 10px;
+}
+
+.right.t h2 {
+    color: var(--light-grey);
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 70px;
+    letter-spacing: 0.72px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.right.t .line {
+    width: 89px;
+    height: 2px;
+    background: var(--yellow);
+    margin: 0px 10px 0px 0px;
+}
+
+.right.t h1 {
+    color: var(--light-grey);
+    font-family: Urbanist;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 150%;
+    text-transform: uppercase;
+}
+
+.bt .bottom {
+    width: 100%;
+    max-width: 437px;
+    min-width: 280px;
+}
+
+.bt .bottom p.btm.one {
+    color: var(--light-grey);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 28px;
+    margin: 10px 0px 20px;
+}
+
+.bt .bottom p.btm.two {
+    color: var(--light-grey);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+}
+
+.banner button.btn-register {
+    margin: 30px 0px;
+    padding: 18px 56px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+    background: var(--yellow);
+    color: var(--light-grey);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+}
+
+.banner-illusion {
+    min-width: 280px;
+}
+.banner-img{
+    position: absolute;
+    z-index: 1;
+    right: 0px;
+    top: 0px;
+    height: fit-content;
+    width: fit-content;
+}
+.banner-img svg{
+    height: 100%;
+    vertical-align: middle;
 }
 
 /* == Contact == */
 section.contact {
     background-color: var(--transparent);
+    margin: 40px 0px 0px;
 }
 
 .contact-container {
@@ -255,9 +395,10 @@ form .control-group input {
     border-radius: 25px;
 }
 
-form .control-group input::placeholder{
+form .control-group input::placeholder {
     color: var(--grey);
 }
+
 .control-group.checkbox {
     display: flex;
     align-items: flex-start;
