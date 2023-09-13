@@ -278,11 +278,23 @@ section.banner {
     height: 100%;
     vertical-align: middle;
 }
+.banner img.vector{
+    position: absolute;
+}
+.banner img.vector.m-one{
+    top: 30%;
+    right: 50%;
+}
+.banner img.vector.m-two{
+    bottom: 30%;
+    left: 45%;
+}
 
 /* == About == */
 section.about {
     padding: 40px 0px;
     width: 100%;
+    position: relative;
 }
 
 .about-container {
@@ -462,6 +474,11 @@ section.about {
 section.events {
     padding: 40px 0px;
     background-color: var(--transparent);
+    background-image: url('img/events-svg-image.svg');
+    background-size: 60% 100%;
+    background-position: left top;
+    background-repeat: no-repeat;
+    position: relative;
 }
 
 .events-container {
@@ -469,7 +486,6 @@ section.events {
     align-items: flex-start;
     justify-content: space-between;
     flex-wrap: wrap;
-    position: relative;
 }
 
 .events.left {
@@ -635,22 +651,25 @@ section.events {
     line-height: 22px;
     margin: 4px 0px;
 }
-.t-c-right ul{
+
+.t-c-right ul {
     list-style: none;
     padding: 0px 0px 0px 20px;
 }
+
 .t-c-right ul li::before {
     content: "\2022";
     color: var(--white);
-    font-weight: bold; 
-    display: inline-block; 
+    font-weight: bold;
+    display: inline-block;
     width: 1em;
     margin-left: -1em;
-  }
-.events-ellipse{
+}
+
+.events-ellipse {
     position: absolute;
     top: 20%;
-    right: -10%;
+    right: 10%;
     width: 470px;
     height: 423px;
     flex-shrink: 0;
@@ -658,6 +677,18 @@ section.events {
     background: var(--yellow);
     filter: blur(290px);
 }
+.events img.vector{
+    position: absolute;
+}
+.events img.vector.m-one{
+    top: 30%;
+    right: 0px;
+}
+.events img.vector.m-two{
+    bottom: 30%;
+    left: 0px;
+}
+
 /* == Contact == */
 section.contact {
     background-color: var(--transparent);
