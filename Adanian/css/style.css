@@ -13,7 +13,20 @@
     -o-transition: all 400ms ease-in-out;
     transition: all 400ms ease-in-out;
 }
-
+button, input{
+    outline: none;
+    border: 0px;
+}
+:root {
+    --transparent: #00000000;
+    --white: #ffffff;
+    --blue: #13A8BD;
+    --black: #000000;
+    --black-level-nd: #0E141C;
+    --grey: #F9F9F9;
+    --yellow: #F39711;
+    --shadow: #00000033;
+}
 html {
     scroll-behavior: smooth;
 }
@@ -26,16 +39,19 @@ html {
 
 /* Track */
 ::-webkit-scrollbar-track {
-    background-color: #050718;
+    background-color: var(--blue);
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: #90123F;
+    background: var(--white);
 }
 
 /* == || SCROLL BAR == */
 /* == GENERAL == */
+body{
+    background: linear-gradient(56deg, var(--blue) 0%, var(--black-level-nd) 100%);
+}
 .container {
     width: 100%;
     max-width: 1240px !important;
@@ -49,15 +65,7 @@ html {
 nav {
     height: 100px;
     width: 100%;
-    background-color: #ffffff;
-    position: fixed;
-    z-index: 10;
-    top: 0;
-}
-.nav.sticky{
-    background-color: #ffffff;
-    box-shadow: 6px 6px 24px #00000033;
-    transition: all ease 0.4s;
+    background-color: var(--transparent);
 }
 .nav-container {
     height: 100%;
@@ -78,14 +86,14 @@ nav {
 .links a {
     font-size: 16px;
     font-weight: 500;
-    color: #00000A;
+    color: var(--white);
     padding: 13px 20px;
 }
 
 .links button {
     width: 157px;
     height: 40px;
-    background: #F39711;
+    background: var(--yellow);
     border-radius: 50px;
     font-family: 'Poppins';
     font-style: normal;
@@ -93,31 +101,22 @@ nav {
     font-size: 16px;
     line-height: 24px;
     text-align: center;
-    color: #F9FCFC;
+    color: var(--white);
     margin: 0px 0px 0px 20px;
 }
 
 .links a.active,
 .links a:hover {
-    color: #90123F;
+    color: var(--yellow);
 }
 
 .nav-logo {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 36px;
-    color: #25518C;
     
 }
 
-.nav-logo img {
-    margin: 0px 10px 0px;
-}
 
 .menu-bar {
     padding: 5px;
@@ -134,7 +133,9 @@ nav {
 
 
 /* == BANNER == */
-
+section.banner{
+    padding: 2000px;
+}
 
 /* == Contact == */
 section.contact {
@@ -389,7 +390,7 @@ footer {
     }
 
     nav {
-        background: #ffffff;
+        background: var(--transparent);
     }
 
     .menu-btn {
