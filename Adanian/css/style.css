@@ -6,7 +6,6 @@
     outline: none;
     border: 0px;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
     -webkit-transition: all 400ms ease-in-out;
     -moz-transition: all 400ms ease-in-out;
     -ms-transition: all 400ms ease-in-out;
@@ -23,7 +22,7 @@ button, input{
     --blue: #13A8BD;
     --black: #000000;
     --black-level-nd: #0E141C;
-    --grey: #F9F9F9;
+    --grey: #BCBCBC;
     --yellow: #F39711;
     --shadow: #00000033;
 }
@@ -95,7 +94,6 @@ nav {
     height: 40px;
     background: var(--yellow);
     border-radius: 50px;
-    font-family: 'Poppins';
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
@@ -139,7 +137,7 @@ section.banner{
 
 /* == Contact == */
 section.contact {
-    background: linear-gradient(0deg, rgba(232, 241, 255, 0.97), rgba(232, 241, 255, 0.97));
+    background-color: var(--transparent);
 }
 
 .contact-container {
@@ -162,22 +160,21 @@ section.contact {
 }
 
 .contact-details .title h1 {
-    font-family: 'Montserrat';
+    font-size: 32px;
     font-style: normal;
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 49px;
-    color: #1C1B1F;
+    font-weight: 500;
+    line-height: 56px;
+    text-transform: uppercase;
+    color: var(--white);
     margin: 10px 0px;
 }
 
 .contact-details .title p {
-    font-family: 'Montserrat';
+    font-size: 18px;
     font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 36px;
-    color: #90123F;
+    font-weight: 500;
+    line-height: 150%;
+    color: var(--white);
     margin: 10px 0px;
 }
 
@@ -189,8 +186,8 @@ section.contact {
     height: 48px;
     width: fit-content;
     padding: 12px 24px;
-    background: #ffffff;
-    border: 1px solid #E0E2F1;
+    background: var(--white);
+    border: 1px solid var(--grey);
     border-radius: 5px;
     margin: 16px 0px;
     display: flex;
@@ -201,12 +198,11 @@ section.contact {
 
 .details .detail span {
     margin: 0px 16px 0px;
-    font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
-    color: #1C1B1F;
+    color: var(--black-level-nd);
 }
 
 .contact-details iframe {
@@ -234,12 +230,11 @@ form .control-group {
 }
 
 form .control-group label {
-    font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
-    color: #1C1B1F;
+    color: var(--white);
     padding: 0px 0px 10px;
 }
 
@@ -247,21 +242,20 @@ form .control-group input {
     outline: none;
     width: 100%;
     height: 50px;
-    border: 1px solid #9B9B9B;
+    border: 1px solid var(--grey);
     border-radius: 5px;
-    background-color: #EFF1FB00;
-    font-family: 'Montserrat';
+    background-color: var(--transparent);
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
-    color: #1C1B1F;
+    color: var(--white);
     padding: 13px 20px;
     border-radius: 25px;
 }
 
 form .control-group input::placeholder{
-    color: #9B9B9B;
+    color: var(--grey);
 }
 .control-group.checkbox {
     display: flex;
@@ -278,37 +272,35 @@ form .control-group input::placeholder{
 #checkboxed {
     width: 18px !important;
     height: 18px !important;
-    border: 2px solid #E0E2F1 !important;
+    border: 2px solid var(--white) !important;
     border-radius: 2px !important;
 }
 
 .control-group button {
-    font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
     line-height: 24px;
-    color: #FCFCFC;
+    color: var(--white);
     height: 50px;
     width: 100%;
-    background: #F39711;
+    background: var(--yellow);
     border-radius: 25px;
 }
 
 /* == || Contact == */
 footer {
-    background: #90123F;
+    background: var(--transparent);
     padding: 10px 0px;
 }
 
 .footer-container p {
-    font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 150%;
     text-align: center;
-    color: #F9FCFC;
+    color: var(--white);
 }
 
 /* == RESPONSIVE == */
@@ -319,7 +311,7 @@ footer {
     }
 
     .menu-btn {
-        color: #1C1B1F;
+        color: var(--black-level-nd);
     }
 
     .links {
@@ -335,7 +327,7 @@ footer {
         transition: all ease 0.5s;
 
         z-index: 5;
-        background-color: #ffffff;
+        background-color: var(--white);
         overflow: auto;
     }
 
@@ -345,13 +337,13 @@ footer {
         justify-content: start;
         width: 100% !important;
         height: 50px;
-        color: #1C1B1F;
+        color: var(--black-level-nd);
         padding: 0px 50px 0px;
     }
 
     .links a:hover {
-        background-color: #DE4404;
-        color: #ffffff;
+        background-color: var(--yellow);
+        color: var(--white);
     }
 
     .links span {
@@ -366,11 +358,11 @@ footer {
         height: 40px;
         width: 40px;
         border-radius: 20px;
-        box-shadow: 2px 2px 12px #0e315533;
+        box-shadow: 2px 2px 12px var(--shadow);
         display: flex;
         align-items: center;
         justify-content: center;
-        color: #1C1B1F;
+        color: var(--black-level-nd);
         font-size: 18px;
         position: absolute;
         top: 12px;
@@ -394,7 +386,7 @@ footer {
     }
 
     .menu-btn {
-        color: #ffffff;
+        color: var(--white);
     }
 
 
