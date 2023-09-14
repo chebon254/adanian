@@ -826,7 +826,6 @@ form .control-group input::placeholder {
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
-    border-radius: 9px !important;
 }
 
 .control-group.checkbox label {
@@ -838,10 +837,13 @@ form .control-group input::placeholder {
 #checkboxed {
     width: 18px !important;
     height: 18px !important;
-    border: 2px solid var(--white) !important;
     border-radius: 9px !important;
-    background-color: var(--transparent);
+    background-color: transparent !important;
+    border: 2px solid var(--white) !important;
 }
+#checkboxed:checked {
+    background-color: white; /* Change background color when checked */
+  }
 
 .control-group button {
     font-style: normal;
