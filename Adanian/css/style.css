@@ -146,6 +146,10 @@ section.banner {
     z-index: 0;
     height: fit-content;
     width: 100%;
+    background-image: url('img/camel-svg-image.svg');
+    background-size: 60% 100%;
+    background-position: right top;
+    background-repeat: no-repeat;
 }
 
 .banner-container {
@@ -263,31 +267,34 @@ section.banner {
     min-width: 280px;
 }
 
-.banner-img {
+/* .banner-img {
     position: absolute;
     z-index: 1;
     right: 0px;
     top: 0px;
-    height: fit-content;
-    width: 100%;
+    height: 882px;
+    width: 852px;
     min-width: 280px;
-    max-width: 850px;
 }
 
 .banner-img svg {
     height: 100%;
-    vertical-align: middle;
-}
-.banner img.vector{
+    width: 100%;
+} */
+
+.banner img.vector {
     position: absolute;
 }
-.banner img.vector.m-one{
-    top: 30%;
-    right: 50%;
+
+.banner img.vector.m-one {
+    top: 10px;
+    right: 40%;
 }
-.banner img.vector.m-two{
-    bottom: 30%;
-    left: 45%;
+
+.banner img.vector.m-two {
+    bottom: 40px;
+    left: 30%;
+    z-index: 4;
 }
 
 /* == About == */
@@ -468,6 +475,19 @@ section.about {
 
 .about-card:nth-child(5) {
     background-color: #90123F;
+}
+.about img.vector {
+    position: absolute;
+}
+
+.about img.vector.m-one {
+    top: 30%;
+    right: 0px;
+}
+
+.about img.vector.m-two {
+    bottom: 30%;
+    left: 0px;
 }
 
 /* == Events == */
@@ -676,17 +696,6 @@ section.events {
     border-radius: 470px;
     background: var(--yellow);
     filter: blur(290px);
-}
-.events img.vector{
-    position: absolute;
-}
-.events img.vector.m-one{
-    top: 30%;
-    right: 0px;
-}
-.events img.vector.m-two{
-    bottom: 30%;
-    left: 0px;
 }
 
 /* == Contact == */
