@@ -11,13 +11,19 @@
     -moz-transition: all 400ms ease-in-out;
     -ms-transition: all 400ms ease-in-out;
     -o-transition: all 400ms ease-in-out;
-    transition: all 400ms ease-in-out;
+    transition: all 10000ms ease-in-out;
 }
 
 button,
 input {
     outline: none;
     border: 0px;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 :root {
